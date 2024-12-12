@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Hola, Soy [Tu Nombre]</h1>
+    <p>Desarrollador Web en formación</p>
+    <nav>
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <h2>Sobre mí</h2>
+    <p>Soy un desarrollador web apasionado por aprender nuevas tecnologías y crear proyectos útiles. Actualmente, estoy aprendiendo React y desarrollando habilidades en Frontend.</p>
+  </section>
+
+  <section id="projects" data-aos="zoom-in">
+    <h2>Proyectos</h2>
+    <div class="project-card">
+      <h3>Proyecto 1: To-Do App</h3>
+      <p>Una aplicación simple para gestionar tareas. Hecha con HTML, CSS y JavaScript.</p>
+      <a href="#" target="_blank">Ver proyecto</a>
+    </div>
+    <div class="project-card">
+      <h3>Proyecto 2: Calculadora</h3>
+      <p>Un clon de calculadora interactiva creado con React.</p>
+      <a href="#" target="_blank">Ver proyecto</a>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contacto</h2>
+    <form id="contactForm">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" placeholder="Tu nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Tu email" required>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" rows="5" placeholder="Tu mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
